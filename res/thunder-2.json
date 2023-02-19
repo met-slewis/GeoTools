@@ -1,0 +1,110 @@
+{
+    "areaDescription": "South Waikato and Rotorua",
+    "baseName": "Severe Thunderstorm Warning",
+    "capId": "2.49.0.0.554.0.tswarning.bp.20230216031632872.0",
+    "category": "TS_WARNINGS",
+    "displayRegions": [
+        "west-north",
+        "east-north"
+    ],
+    "eventType": "thunderstorm",
+    "expiresAt": "2023-02-16T18:07:00+13:00",
+    "icon": "warning-thunderstorm",
+    "imageUrl": "/mobile/nz/assets/warnings/thunderstormWarningImage?data=BAY-OF-PLENTY/20230216-0307-00.000",
+    "instruction": "",
+    "isActive": true,
+    "issuedAt": "2023-02-16T16:16:32+13:00",
+    "issuedAtIce": 1676517392000,
+    "name": "Severe Thunderstorm Warning",
+    "nameColour": null,
+    "nextIssueAt": "2023-02-16T17:07:00+13:00",
+    "polygons": [
+        [
+            [
+                -38.236,
+                176.154
+            ],
+            [
+                -38.333,
+                176.117
+            ],
+            [
+                -38.361,
+                176.13
+            ],
+            [
+                -38.383,
+                176.158
+            ],
+            [
+                -38.393,
+                176.197
+            ],
+            [
+                -38.368,
+                176.337
+            ],
+            [
+                -38.332,
+                176.386
+            ],
+            [
+                -38.284,
+                176.422
+            ],
+            [
+                -38.235,
+                176.431
+            ],
+            [
+                -38.187,
+                176.396
+            ],
+            [
+                -38.157,
+                176.347
+            ],
+            [
+                -38.147,
+                176.298
+            ],
+            [
+                -38.153,
+                176.249
+            ],
+            [
+                -38.187,
+                176.2
+            ],
+            [
+                -38.236,
+                176.154
+            ]
+        ]
+    ],
+    "preview": {
+        "details": {
+            "markdown": "**Forecast:** At 04:07 pm, MetService weather radar detected severe thunderstorms near WAIOTAPU, WAIKITE VALLEY, WAIREKA and GUTHRIE. These severe thunderstorms are moving towards the northeast, and are expected to lie near ROTORUA, WAIOTAPU, WAIKITE VALLEY, WAIREKA and GUTHRIE at 04:37 pm and near ROTORUA, WAIOTAPU, WAIKITE VALLEY, LAKE TARAWERA, WAIREKA and GUTHRIE at 05:07 pm. These thunderstorms are expected to be accompanied by torrential rain.\n\n**Impact:** Torrential rain can cause surface and/or flash flooding about streams, gullies and urban areas, and make driving conditions extremely hazardous.\n\n###### Next update: 5:07pm Thu 16 Feb"
+        },
+        "markdown": "**Area:** South Waikato and Rotorua\n\n###### Issued: 4:16pm Thu 16 Feb\n\n",
+        "name": "Severe Thunderstorm Warning",
+        "shareText": "MetService Severe Thunderstorm Warning\n\nArea: South Waikato and Rotorua\n\nForecast: At 04:07 pm, MetService weather radar detected severe thunderstorms near WAIOTAPU, WAIKITE VALLEY, WAIREKA and GUTHRIE. These severe thunderstorms are moving towards the northeast, and are expected to lie near ROTORUA, WAIOTAPU, WAIKITE VALLEY, WAIREKA and GUTHRIE at 04:37 pm and near ROTORUA, WAIOTAPU, WAIKITE VALLEY, LAKE TARAWERA, WAIREKA and GUTHRIE at 05:07 pm. These thunderstorms are expected to be accompanied by torrential rain.\n\nImpact: Torrential rain can cause surface and/or flash flooding about streams, gullies and urban areas, and make driving conditions extremely hazardous.\n\nIssued: 4:16pm Thu 16 Feb\n\nAll severe weather information:\nhttps://www.metservice.com/warnings\n\nDownload the MetService app.\nhttps://www.metservice.com/app",
+        "warnIcon": "warning-thunderstorm-red",
+        "warnLevel": "red"
+    },
+    "regions": [
+        "Waikato",
+        "Rotorua"
+    ],
+    "situation": null,
+    "text": "At 04:07 pm, MetService weather radar detected severe thunderstorms near WAIOTAPU, WAIKITE VALLEY, WAIREKA and GUTHRIE. These severe thunderstorms are moving towards the northeast, and are expected to lie near ROTORUA, WAIOTAPU, WAIKITE VALLEY, WAIREKA and GUTHRIE at 04:37 pm and near ROTORUA, WAIOTAPU, WAIKITE VALLEY, LAKE TARAWERA, WAIREKA and GUTHRIE at 05:07 pm. These thunderstorms are expected to be accompanied by torrential rain.",
+    "threatEndTime": "0001-01-01T00:00:00Z",
+    "threatPeriod": "",
+    "threatStartTime": "2023-02-16T16:16:32+13:00",
+    "type": "thunderstorm",
+    "validTo": "2023-02-16T17:07:00+13:00",
+    "warnIcon": "warning-thunderstorm-red",
+    "warnLevel": "red",
+    "warningType": "SEVERE_THUNDERSTORM_WARNING",
+    "impact": "Torrential rain can cause surface and/or flash flooding about streams, gullies and urban areas, and make driving conditions extremely hazardous."
+}

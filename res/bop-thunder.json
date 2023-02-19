@@ -1,0 +1,408 @@
+{
+  "areaDescription": "Bay of Plenty, Rotorua, Taupo, Gisborne, Hawkes Bay",
+  "baseName": "Severe Thunderstorm Watch",
+  "capId": "2.49.0.0.554.0.tswatch.nz.20230215184443350.0",
+  "category": "TS_WATCHES",
+  "displayRegions": [
+      "east-north",
+      "central-north"
+  ],
+  "eventType": "thunderstorm",
+  "expiresAt": "2023-02-17T00:00:00+13:00",
+  "icon": "warning-thunderstorm",
+  "imageUrl": "/mobile/nz/assets/warnings/thunderstormWatchImage?time=2023-02-16T07:44:43+13:00/2023-02-16T07:44:43+13:00",
+  "instruction": "Note:  A Severe Thunderstorm Watch means conditions are favourable for severe thunderstorms in and close to the watch area.  People in these areas should be on the lookout for threatening weather conditions and monitor for possible Severe Thunderstorm Warnings. \n\nFor information on preparing for and keeping safe during a storm, see the Civil Defence Get Ready website",
+  "isActive": true,
+  "issuedAt": "2023-02-16T07:44:43+13:00",
+  "issuedAtIce": 1676486683000,
+  "name": "Severe Thunderstorm Watch",
+  "nameColour": null,
+  "nextIssueAt": "2023-02-16T22:00:00+13:00",
+  "polygons": [
+      [
+          [
+              -37.558,
+              176.12
+          ],
+          [
+              -37.577,
+              176.141
+          ],
+          [
+              -37.658,
+              176.28
+          ],
+          [
+              -37.714,
+              176.411
+          ],
+          [
+              -37.727,
+              176.477
+          ],
+          [
+              -37.808,
+              176.626
+          ],
+          [
+              -37.876,
+              176.844
+          ],
+          [
+              -37.899,
+              176.968
+          ],
+          [
+              -37.971,
+              177.201
+          ],
+          [
+              -37.963,
+              177.364
+          ],
+          [
+              -37.953,
+              177.419
+          ],
+          [
+              -37.891,
+              177.532
+          ],
+          [
+              -37.822,
+              177.569
+          ],
+          [
+              -37.662,
+              177.729
+          ],
+          [
+              -37.64,
+              177.847
+          ],
+          [
+              -37.521,
+              177.973
+          ],
+          [
+              -37.508,
+              178.22
+          ],
+          [
+              -37.552,
+              178.341
+          ],
+          [
+              -37.619,
+              178.414
+          ],
+          [
+              -37.627,
+              178.498
+          ],
+          [
+              -37.683,
+              178.577
+          ],
+          [
+              -37.716,
+              178.574
+          ],
+          [
+              -37.799,
+              178.498
+          ],
+          [
+              -38.021,
+              178.383
+          ],
+          [
+              -38.1,
+              178.401
+          ],
+          [
+              -38.135,
+              178.341
+          ],
+          [
+              -38.143,
+              178.341
+          ],
+          [
+              -38.176,
+              178.38
+          ],
+          [
+              -38.236,
+              178.346
+          ],
+          [
+              -38.25,
+              178.354
+          ],
+          [
+              -38.26,
+              178.335
+          ],
+          [
+              -38.318,
+              178.228
+          ],
+          [
+              -38.355,
+              178.12
+          ],
+          [
+              -38.403,
+              177.976
+          ],
+          [
+              -38.446,
+              177.829
+          ],
+          [
+              -38.497,
+              177.692
+          ],
+          [
+              -38.592,
+              177.569
+          ],
+          [
+              -38.68,
+              177.485
+          ],
+          [
+              -38.743,
+              177.419
+          ],
+          [
+              -38.837,
+              177.306
+          ],
+          [
+              -38.95,
+              177.149
+          ],
+          [
+              -39.023,
+              177.039
+          ],
+          [
+              -39.095,
+              176.936
+          ],
+          [
+              -39.17,
+              176.818
+          ],
+          [
+              -39.245,
+              176.695
+          ],
+          [
+              -39.304,
+              176.569
+          ],
+          [
+              -39.332,
+              176.516
+          ],
+          [
+              -39.357,
+              176.466
+          ],
+          [
+              -39.371,
+              176.414
+          ],
+          [
+              -39.365,
+              176.359
+          ],
+          [
+              -39.343,
+              176.304
+          ],
+          [
+              -39.272,
+              176.196
+          ],
+          [
+              -39.192,
+              176.136
+          ],
+          [
+              -39.131,
+              176.117
+          ],
+          [
+              -39.074,
+              176.128
+          ],
+          [
+              -39.015,
+              176.151
+          ],
+          [
+              -38.944,
+              176.17
+          ],
+          [
+              -38.821,
+              176.178
+          ],
+          [
+              -38.741,
+              176.178
+          ],
+          [
+              -38.633,
+              176.154
+          ],
+          [
+              -38.54,
+              176.136
+          ],
+          [
+              -38.483,
+              176.109
+          ],
+          [
+              -38.359,
+              176.025
+          ],
+          [
+              -38.25,
+              175.954
+          ],
+          [
+              -38.147,
+              175.91
+          ],
+          [
+              -38.077,
+              175.886
+          ],
+          [
+              -37.957,
+              175.876
+          ],
+          [
+              -37.824,
+              175.918
+          ],
+          [
+              -37.777,
+              175.931
+          ],
+          [
+              -37.733,
+              175.949
+          ],
+          [
+              -37.696,
+              175.989
+          ],
+          [
+              -37.66,
+              176.031
+          ],
+          [
+              -37.558,
+              176.12
+          ]
+      ],
+      [
+          [
+              -37.592,
+              176.401
+          ],
+          [
+              -37.585,
+              176.417
+          ],
+          [
+              -37.619,
+              176.458
+          ],
+          [
+              -37.654,
+              176.435
+          ],
+          [
+              -37.669,
+              176.403
+          ],
+          [
+              -37.664,
+              176.396
+          ],
+          [
+              -37.644,
+              176.388
+          ],
+          [
+              -37.592,
+              176.401
+          ]
+      ],
+      [
+          [
+              -37.521,
+              177.154
+          ],
+          [
+              -37.508,
+              177.154
+          ],
+          [
+              -37.496,
+              177.18
+          ],
+          [
+              -37.515,
+              177.209
+          ],
+          [
+              -37.533,
+              177.207
+          ],
+          [
+              -37.544,
+              177.18
+          ],
+          [
+              -37.521,
+              177.154
+          ]
+      ]
+  ],
+  "preview": {
+      "details": {
+          "markdown": "**Forecast:** \nAn upper trough crosses the North Island this afternoon and evening, generating very unstable conditions over northern and central parts of the North Island with scattered thunderstorms bringing localised heavy rain and hail. \n\nBetween 3pm and 10pm today (Thursday), a few of the thunderstorms could be SEVERE about Bay of Plenty, Rotorua, eastern Taupo, the ranges of Hawke's Bay and Gisborne, and Gisborne north of Tolaga Bay, with localised downpours of 25 to 40mm per hour and hail. \n\nRainfall of this intensity can cause surface and/or flash flooding, especially about low-lying areas such as streams, rivers or narrow valleys, and may also lead to slips. \n\nDriving conditions will also be hazardous with surface flooding and poor visibility in heavy  rain.\n\nAny severe thunderstorms that develop will be isolated, and the thunderstorm activity should die away tonight.\n\n\n\n###### Next update: 10:00pm Thu 16 Feb"
+      },
+      "markdown": "**Period:** 7hrs from 3pm - 10pm Thu, 16 Feb\n\n**Area:** Bay of Plenty, Rotorua, Taupo, Gisborne, Hawkes Bay\n\n###### Issued: 7:44am Thu 16 Feb\n\n",
+      "name": "Severe Thunderstorm Watch",
+      "shareText": "MetService Severe Thunderstorm Watch\n\nArea: Bay of Plenty, Rotorua, Taupo, Gisborne, Hawkes Bay\n\nPeriod: 7hrs from 3pm - 10pm Thu, 16 Feb\n\nForecast: \nAn upper trough crosses the North Island this afternoon and evening, generating very unstable conditions over northern and central parts of the North Island with scattered thunderstorms bringing localised heavy rain and hail. \n\nBetween 3pm and 10pm today (Thursday), a few of the thunderstorms could be SEVERE about Bay of Plenty, Rotorua, eastern Taupo, the ranges of Hawke's Bay and Gisborne, and Gisborne north of Tolaga Bay, with localised downpours of 25 to 40mm per hour and hail. \n\nRainfall of this intensity can cause surface and/or flash flooding, especially about low-lying areas such as streams, rivers or narrow valleys, and may also lead to slips. \n\nDriving conditions will also be hazardous with surface flooding and poor visibility in heavy  rain.\n\nAny severe thunderstorms that develop will be isolated, and the thunderstorm activity should die away tonight.\n\n\n\nIssued: 7:44am Thu 16 Feb\n\nAll severe weather information:\nhttps://www.metservice.com/warnings\n\nDownload the MetService app.\nhttps://www.metservice.com/app",
+      "warnIcon": "warning-thunderstorm-yellow",
+      "warnLevel": "yellow"
+  },
+  "regions": [
+      "Bay of Plenty",
+      "Rotorua",
+      "Taupo",
+      "Gisborne",
+      "Hawkes Bay"
+  ],
+  "situation": null,
+  "text": "\nAn upper trough crosses the North Island this afternoon and evening, generating very unstable conditions over northern and central parts of the North Island with scattered thunderstorms bringing localised heavy rain and hail. \n\nBetween 3pm and 10pm today (Thursday), a few of the thunderstorms could be SEVERE about Bay of Plenty, Rotorua, eastern Taupo, the ranges of Hawke's Bay and Gisborne, and Gisborne north of Tolaga Bay, with localised downpours of 25 to 40mm per hour and hail. \n\nRainfall of this intensity can cause surface and/or flash flooding, especially about low-lying areas such as streams, rivers or narrow valleys, and may also lead to slips. \n\nDriving conditions will also be hazardous with surface flooding and poor visibility in heavy  rain.\n\nAny severe thunderstorms that develop will be isolated, and the thunderstorm activity should die away tonight.\n\n",
+  "threatEndTime": "2023-02-16T22:00:00+13:00",
+  "threatPeriod": "7hrs from 3pm - 10pm Thu, 16 Feb",
+  "threatStartTime": "2023-02-16T15:00:00+13:00",
+  "type": "thunderstorm",
+  "validTo": "2023-02-16T22:00:00+13:00",
+  "warnIcon": "warning-thunderstorm-yellow",
+  "warnLevel": "yellow",
+  "warningType": "SEVERE_THUNDERSTORM_WATCH"
+}

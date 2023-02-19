@@ -1,0 +1,1428 @@
+<html>
+<head>
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
+    <style type=\"text/css\">/* RESET STYLES!!! */
+    \r\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    \r\nbody {
+        background-color: #fff;
+        font-size: 100%;
+        line-height: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    \r\nblockquote, q {
+        quotes: none;
+    }
+
+    \r\n:focus {
+        outline: 0;
+    }
+
+    \r\nins {
+        text-decoration: none;
+    }
+
+    \r\ndel {
+        text-decoration: line-through;
+    }
+
+    \r\ntable {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    \r\n\r\n /* GENERAL STYLES  */ \r\nh1, h2 {
+        fpadding: 8px;
+        border-bottom: 1px solid #CFCFCF;
+    }
+
+    \r\nh1 {
+        font-size: 1.45em
+    }
+
+    \r\nh2 {
+        font-size: 1.3em
+    }
+
+    \r\nh3 {
+        font-size: 1.25em
+    }
+
+    \r\nh4 {
+        font-size: 1.15em;
+        margin-top: 16px;
+        margin-bottom: 5px;
+    }
+
+    \r\na {
+        color: #3f7389;
+        text-decoration: none;
+    }
+
+    \r\nimg {
+        border: none;
+        padding: 0 0 16px
+    }
+
+    \r\np {
+        line-height: 1.3em;
+        margin-bottom: 1.0em;
+    }
+
+    \r\nul {
+        padding-left: 15px;
+        margin: 2px 0 6px;
+    }
+
+    \r\nul li {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 0 3px;
+    }
+
+    \r\n#wrapper, #mob-header-inner {
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    \r\n#mob-header-outer {
+        background: #fff;
+        width: 100%;
+    }
+
+    \r\n\r\n.newline {
+        height: 5px
+    }
+
+    \r\n.heading-spacer {
+        margin-bottom: 16px
+    }
+
+    \r\n.clear-both {
+        clear: both
+    }
+
+    \r\n\r\n /* HEADER STYLES  */ \r\n.mob-header {
+        padding: 0;
+        overflow: hidden;
+        width: 300px;
+    }
+
+    \r\n.warn-head {
+        margin-top: -7px;
+        float: right;
+    }
+
+    \r\n.logo {
+        margin-top: 10px;
+        float: left;
+    }
+
+    \r\n.mob-page {
+        background-color: #fff;
+        margin: 1em 1em 1em 1em;
+    }
+
+    \r\n.mob-page .last {
+        border-bottom: none;
+    }
+
+    \r\n.mob-content {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    \r\n.item {
+        position: relative;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        color: #000;
+        float: none;
+        border: none;
+    }
+
+    \r\n.item h2 {
+        padding: 8px 0 20px;
+        border-bottom: 0;
+        text-transform: none;
+    }
+
+    \r\n.item > img {
+        margin-right: 0.8em;
+        margin-bottom: 0.8em;
+    }
+
+    \r\n.item img.imagecache {
+        margin: 0 0 10px 1px;
+    }
+
+    \r\n.item > p.small-text {
+        font-size: 0.8em;
+        line-height: 1.3em;
+        margin-bottom: 0.8em;
+    }
+
+    \r\n.item > p.small {
+        color: #595959;
+        font-size: 0.8em;
+        line-height: 1.3em;
+        margin-bottom: 0.8em;
+    }
+
+    \r\n.wide .item > p {
+        width: 80%;
+    }
+
+    \r\n.swx-page p {
+        width: 100%;
+    }
+
+    \r\n.item > p strong {
+        font-size: 1.2em;
+    }
+
+    .item span {
+        margin: 0 5px 0 3px;
+        padding: 0 2px;
+    }
+
+    \r\n.item span span {
+        margin: 0;
+        padding: 0 0 0 1px;
+    }
+
+    \r\nspan.date {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        font-size: 0.8em;
+        color: #666;
+        font-weight: bold;
+    }
+
+    \r\n.home-warnings {
+        float: right;
+    }
+
+    \r\n.pagination {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 7px 0 0 10px;
+    }
+
+    \r\np.item-pagination {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    \r\n.pagination-swx {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    \r\n.mob-footer {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    \r\n.mob-tnav-wrapper {
+        border-bottom: 4px solid #ccc;
+        height: 30px;
+    }
+
+    \r\nbody#marine .mob-tnav-wrapper, body#mtn .mob-tnav-wrapper {
+        border-bottom: none;
+        height: 32px;
+    }
+
+    \r\n\r\n#info-message {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: black;
+        background-color: #6abcfc;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+
+    \r\n#info-message a {
+        font-weight: bold;
+    }
+
+    \r\n\r\n /* TOWNS & OBSERVATION STYLES */ \r\n.town-detail {
+        padding-left: 1em;
+        padding-right: 1em;
+        -webkit-border-radius: 7px
+    }
+
+    \r\n.town-detail h1 {
+        font-weight: 700;
+        color: #000;
+        border: none;
+        padding: 20px 0;
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    \r\n.town-detail p {
+        font-size: 1em;
+        padding: 0 0 10px;
+    }
+
+    \r\n.town-detail.title-detail {
+        -webkit-border-radius: 0
+    }
+
+    \r\n.title-detail p {
+        margin-bottom: 0
+    }
+
+    \r\n\r\n.red {
+        color: #d94933;
+    }
+
+    \r\n.orange {
+        color: #fd5b00;
+    }
+
+    \r\n.yellow {
+        color: #e9cb30;
+    }
+
+    \r\n\r\n /* IMAGERY */ \r\n.chart-image {
+        width: 100%;
+        max-width: 888px;
+        margin-top: 4px;
+        padding-top: 0;
+        margin-bottom: 6px;
+        padding-bottom: 0;
+    }
+
+    \r\n.image-wrapper-hires {
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid #CECECE;
+        padding: 5px;
+        background: #fff;
+        float: left;
+        width: 290px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    \r\n.pager-footer {
+        line-height: 1.3em;
+        color: #666;
+        border: 1px solid #CECECE;
+        padding: 10px;
+        background: #fff;
+        float: left;
+        width: 280px;
+        overflow: hidden;
+        margin: 0;
+        font-size: 0.8em;
+        -webkit-border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+        margin-bottom: 10px;
+    }
+
+    \r\n.key {
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid #CECECE;
+        border-top: 1px solid #CECECE;
+        border-bottom: 0;
+        text-align: center;
+        background: #fff;
+        width: 284px;
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    \r\n.key.last {
+        border-bottom: 1px solid #CECECE;
+        margin-bottom: 10px;
+        -webkit-border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+    }
+
+    \r\n.key img {
+        float: none;
+    }
+
+    \r\n.radar-key {
+        padding-bottom: 10px;
+    }
+
+    \r\n.key p {
+        width: 262px;
+        text-align: left;
+        font-size: 0.8em;
+        line-height: 13px;
+        border-top: 1px solid #cecece;
+        padding-top: 10px;
+        margin: 10px 0 0 10px;
+    }
+
+    \r\np.rain-snow {
+        padding-left: 25px;
+        width: 237px;
+    }
+
+    \r\n\r\n /* WARNINGS BOX */ \r\n.swx {
+        color: #666;
+        line-height: 1.3em;
+    }
+
+    \r\n.swx-page h2 {
+        padding: 10px;
+    }
+
+    \r\n.swx-page .item {
+        padding: 10px 6px 4px 10px;
+    }
+
+    \r\n.swx-page a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #2E7C96;
+        font-size: 1.1em;
+    }
+
+    \r\n.warnings-box {
+        color: #ffffff;
+        background-color: #eb6902;
+        margin: 22px 0 0;
+        -webkit-border-radius: 7px;
+    }
+
+    \r\n.warnings-box ul {
+        padding: 2px 10px 4px 10px
+    }
+
+    \r\n.warnings-box ul li {
+        font-size: 1em;
+        font-weight: bold;
+        border-bottom: 1px solid #ef8836;
+        padding: 7px 0;
+    }
+
+    \r\n.warnings-box ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    \r\n.warnings-box h3 {
+        color: #eb6902;
+        font-size: 1.2em;
+        padding: 10px;
+        border: 1px solid #ffbb83;
+        border-bottom: 0;
+        -webkit-border-top-left-radius: 7px;
+        -webkit-border-top-right-radius: 7px;
+    }
+
+    \r\n.warning-active {
+        float: right;
+    }
+
+    \r\n.warnings-banner {
+        text-align: center;
+        padding: 2px 0 8px 0;
+        margin: -13px 0 10px 0;
+    }
+
+    \r\n#marine .warnings-banner {
+        margin-top: -10px;
+    }
+
+    \r\n.warnings-banner a {
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 4px 2px 8px;
+    }
+
+    \r\n\r\n /* SECTION STYLES */ \r\n.section-list h2 {
+        padding: 0;
+        border-bottom: 0;
+        text-transform: none;
+    }
+
+    \r\n.section-list ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    \r\n.section-list li {
+        position: relative;
+        color: #999;
+        text-transform: uppercase;
+        border-bottom: 1px solid #CFCFCF;
+        padding: 12px 0 10px 10px;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    \r\n.section-list li.first {
+        padding: 0;
+    }
+
+    \r\n.section-list li.last {
+        padding: 0;
+        border: none;
+    }
+
+    \r\n.section-list li.first strong {
+        padding: 2px 0 8px 8px;
+    }
+
+    \r\n.section-list strong {
+        display: block;
+        font-size: 1.2em;
+        color: #EB6800;
+        text-transform: none;
+    }
+
+    \r\n.section-list li a {
+        display: block;
+        color: #2E7C96;
+        padding: 12px 0 10px 10px;
+        margin: -12px 0 -10px -10px;
+    }
+
+    \r\n.section-list li a:focus {
+        background: #006d7d;
+        color: #fff;
+    }
+
+    \r\n.status-text {
+        font-size: 0.8em;
+        padding: 0 0 3px 0;
+        margin: 0;
+    }
+
+    \r\n\r\n /* SUBNAV STYLES */ \r\nul.mob-snav {
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        padding: 8px 0 12px 0;
+        margin: -2px 0 10px 0;
+    }
+
+    \r\nul.mob-snav li {
+        display: inline;
+        padding: 0 8px 0 11px;
+        border-left: 1px solid #96a58d;
+    }
+
+    \r\nul.mob-snav li a {
+        color: #e4e4e4;
+    }
+
+    \r\nul.mob-snav li a.active {
+        color: #fff;
+    }
+
+    \r\nul.mob-snav.marine {
+        background: #009eb9;
+        border-top: 1px solid #37ADC0;
+    }
+
+    \r\nul.mob-snav.marine li {
+        border-left: 1px solid #ccecf1;
+    }
+
+    \r\nul.mob-snav.mtns {
+        background: #59705d;
+        border-top: 1px solid #6D928B;
+    }
+
+    \r\nul.mob-snav.mtns li {
+        border-left: 1px solid #dfe4e1;
+    }
+
+    \r\nul.mob-snav li.first {
+        border: none;
+    }
+
+    \r\n\r\n /* TABLES */ \r\n.table {
+        margin: 0;
+        width: 282px;
+        margin-bottom: 10px;
+    }
+
+    \r\n.table .table-heading {
+        line-height: 16px;
+    }
+
+    \r\n.table th {
+        background-color: #fff;
+        padding: 8px;
+        font-size: 1em;
+        color: #666;
+        border: 1px solid #ddd;
+    }
+
+    \r\n.table .cfg th {
+        background-color: #eee;
+    }
+
+    \r\n.table tr.even {
+        background-color: #fff;
+    }
+
+    \r\n.table tr.odd {
+        background-color: #fff;
+    }
+
+    \r\n.table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        font-size: 1em;
+    }
+
+    \r\n.table td span.temp {
+        padding: 0;
+        margin: 0
+    }
+
+    \r\n.table td.td-right, .table th.td-right {
+        text-align: right;
+    }
+
+    \r\n.table td.td-center, .table th.td-center {
+        text-align: center;
+    }
+
+    \r\n\r\n /* MESSAGES */ \r\n#message {
+        color: #336633;
+        text-align: center;
+    }
+
+    \r\n#message .status, #message .error {
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        -webkit-border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+        -webkit-border-top-left-radius: 7px;
+        -webkit-border-top-right-radius: 7px;
+    }
+
+    \r\n#message .status {
+        background: #ffffff;
+        border: 1px solid #cecece;
+    }
+
+    \r\n#message .error {
+        background: #CC3300;
+        color: #ffffff;
+    }
+
+    \r\n#message .status ul, #message .error ul {
+        margin: 0 0 -12px -10px;
+    }
+
+    \r\n#message .status li, #message .error li {
+        margin-bottom: 15px;
+    }
+
+    \r\n\r\n /* STANDARD PAGE */ \r\n.standard-page h1 {
+        padding: 8px 10px;
+    }
+
+    \r\n.standard-page p {
+        margin: 10px;
+    }</style>
+</head>
+<body>
+<div class=\"mob-content\">
+    <div class=\"town-detail title-detail\
+    "><h1>Marine Warnings</h1></div>
+<div class=\"mob-page\">
+    <div class=\"item\"></div>
+    <div class=\"item\">
+        <div style=\"margin-top:28px\">
+            <div style=\"float:left; height:32px; width:32px; padding:0 8px 4px 0; margin:-4px 0 8px;\
+            ">
+            <svg height=\"32\" viewBox=\"0 0 32 32\
+            " width=\"32\" xmlns=\"http://www.w3.org/2000/svg\">
+            <g fill=\"none\" fill-rule=\"evenodd\">
+                <path d=\"m23.3 3.02h-14.6l-7.3 12.653 7.3 12.644h14.6l7.3-12.644z\
+                " fill=\"#fff\" stroke=\"#d36321\" stroke-linejoin=\"round\" stroke-width=\"2.6\"/>
+                <path d=\"m13 7.78v7.38l7-3.69zm0 9.05v7.38l7-3.69z\
+                " fill=\"#262626\"/>
+            </g>
+            </svg></div>
+        <h4>Coastal Gale Warnings</h4></div>
+    <div style=\"clear:both;margin:0\"></div>
+    Castlepoint, Cook, Foveaux, Puysegur, Stephens</p></div>
+<div class=\"item\"></div>
+<div class=\"item\"></div>
+<div class=\"item\"><p>No Heavy Swell Warning in force for the Wellington, Wairarapa, Kapiti and Porirua coasts.</p>
+    <p class=\"u-textGrey small u-block u-mT-xs\">Swell warnings are issued directly to regional authorities for other
+    selected coasts but are not currently published here.</p></div>
+<div class=\"item\"></div>
+<div class=\"item\">
+    <div style=\"margin-top:28px\">
+        <div style=\"float:left; height:32px; width:32px; padding:0 8px 4px 0; margin:-4px 0 8px;\
+        ">
+        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\
+        ">
+        <g fill=\"none\" fill-rule=\"evenodd\">
+            <path fill=\"#D36321\" fill-rule=\"nonzero\" d=\"M23.2 1.7a1.3 1.3 0 0 1 1.126.65l7.3 12.654a1.3 1.3 0 0 1 0
+                  1.3l-7.3 12.643a1.3 1.3 0 0 1-1.126.65H8.6a1.3 1.3 0 0 1-1.126-.65l-7.3-12.644a1.3 1.3 0 0 1
+                  0-1.3l7.3-12.653A1.3 1.3 0 0 1 8.6 1.7h14.6z\
+            "/>
+            <path fill=\"#FFF\" fill-rule=\"nonzero\" d=\"M22.45 4.3H9.35L2.802 15.653l6.55 11.344h13.098L29 15.653z\
+            "/>
+            <path fill=\"#262626\" d=\"M13.3 12v7.38l7-3.69z\
+            "/>
+        </g>
+        </svg></div>
+    <h4>Recreational Strong Wind Advisory</h4></div>
+<div style=\"clear:both;margin:0\"></div>
+Coromandel, Bay of Plenty, Kapiti, Mana, Wellington</p></div><br><br><br></div></div></body>
+</html>"
+}
+],
+"hasCancellation" : false,
+"hasData" : true,
+"hasWarning" : true,
+"name" : "Marine Warnings",
+"warnLevel" : "orange"
+},
+{
+"code" : "WEATHER_WARNING_CRITERIA",
+"editions" : [
+{
+"datum" : "
+<html>
+<head>
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
+    <style type=\"text/css\">/* RESET STYLES!!! */
+    \r\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    \r\nbody {
+        background-color: #fff;
+        font-size: 100%;
+        line-height: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    \r\nblockquote, q {
+        quotes: none;
+    }
+
+    \r\n:focus {
+        outline: 0;
+    }
+
+    \r\nins {
+        text-decoration: none;
+    }
+
+    \r\ndel {
+        text-decoration: line-through;
+    }
+
+    \r\ntable {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    \r\n\r\n /* GENERAL STYLES  */ \r\nh1, h2 {
+        fpadding: 8px;
+        border-bottom: 1px solid #CFCFCF;
+    }
+
+    \r\nh1 {
+        font-size: 1.45em
+    }
+
+    \r\nh2 {
+        font-size: 1.3em
+    }
+
+    \r\nh3 {
+        font-size: 1.25em
+    }
+
+    \r\nh4 {
+        font-size: 1.15em;
+        margin-top: 16px;
+        margin-bottom: 5px;
+    }
+
+    \r\na {
+        color: #3f7389;
+        text-decoration: none;
+    }
+
+    \r\nimg {
+        border: none;
+        padding: 0 0 16px
+    }
+
+    \r\np {
+        line-height: 1.3em;
+        margin-bottom: 1.0em;
+    }
+
+    \r\nul {
+        padding-left: 15px;
+        margin: 2px 0 6px;
+    }
+
+    \r\nul li {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 0 3px;
+    }
+
+    \r\n#wrapper, #mob-header-inner {
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    \r\n#mob-header-outer {
+        background: #fff;
+        width: 100%;
+    }
+
+    \r\n\r\n.newline {
+        height: 5px
+    }
+
+    \r\n.heading-spacer {
+        margin-bottom: 16px
+    }
+
+    \r\n.clear-both {
+        clear: both
+    }
+
+    \r\n\r\n /* HEADER STYLES  */ \r\n.mob-header {
+        padding: 0;
+        overflow: hidden;
+        width: 300px;
+    }
+
+    \r\n.warn-head {
+        margin-top: -7px;
+        float: right;
+    }
+
+    \r\n.logo {
+        margin-top: 10px;
+        float: left;
+    }
+
+    \r\n.mob-page {
+        background-color: #fff;
+        margin: 1em 1em 1em 1em;
+    }
+
+    \r\n.mob-page .last {
+        border-bottom: none;
+    }
+
+    \r\n.mob-content {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    \r\n.item {
+        position: relative;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        color: #000;
+        float: none;
+        border: none;
+    }
+
+    \r\n.item h2 {
+        padding: 8px 0 20px;
+        border-bottom: 0;
+        text-transform: none;
+    }
+
+    \r\n.item > img {
+        margin-right: 0.8em;
+        margin-bottom: 0.8em;
+    }
+
+    \r\n.item img.imagecache {
+        margin: 0 0 10px 1px;
+    }
+
+    \r\n.item > p.small-text {
+        font-size: 0.8em;
+        line-height: 1.3em;
+        margin-bottom: 0.8em;
+    }
+
+    \r\n.item > p.small {
+        color: #595959;
+        font-size: 0.8em;
+        line-height: 1.3em;
+        margin-bottom: 0.8em;
+    }
+
+    \r\n.wide .item > p {
+        width: 80%;
+    }
+
+    \r\n.swx-page p {
+        width: 100%;
+    }
+
+    \r\n.item > p strong {
+        font-size: 1.2em;
+    }
+
+    .item span {
+        margin: 0 5px 0 3px;
+        padding: 0 2px;
+    }
+
+    \r\n.item span span {
+        margin: 0;
+        padding: 0 0 0 1px;
+    }
+
+    \r\nspan.date {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        font-size: 0.8em;
+        color: #666;
+        font-weight: bold;
+    }
+
+    \r\n.home-warnings {
+        float: right;
+    }
+
+    \r\n.pagination {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 7px 0 0 10px;
+    }
+
+    \r\np.item-pagination {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    \r\n.pagination-swx {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    \r\n.mob-footer {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    \r\n.mob-tnav-wrapper {
+        border-bottom: 4px solid #ccc;
+        height: 30px;
+    }
+
+    \r\nbody#marine .mob-tnav-wrapper, body#mtn .mob-tnav-wrapper {
+        border-bottom: none;
+        height: 32px;
+    }
+
+    \r\n\r\n#info-message {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: black;
+        background-color: #6abcfc;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+
+    \r\n#info-message a {
+        font-weight: bold;
+    }
+
+    \r\n\r\n /* TOWNS & OBSERVATION STYLES */ \r\n.town-detail {
+        padding-left: 1em;
+        padding-right: 1em;
+        -webkit-border-radius: 7px
+    }
+
+    \r\n.town-detail h1 {
+        font-weight: 700;
+        color: #000;
+        border: none;
+        padding: 20px 0;
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    \r\n.town-detail p {
+        font-size: 1em;
+        padding: 0 0 10px;
+    }
+
+    \r\n.town-detail.title-detail {
+        -webkit-border-radius: 0
+    }
+
+    \r\n.title-detail p {
+        margin-bottom: 0
+    }
+
+    \r\n\r\n.red {
+        color: #d94933;
+    }
+
+    \r\n.orange {
+        color: #fd5b00;
+    }
+
+    \r\n.yellow {
+        color: #e9cb30;
+    }
+
+    \r\n\r\n /* IMAGERY */ \r\n.chart-image {
+        width: 100%;
+        max-width: 888px;
+        margin-top: 4px;
+        padding-top: 0;
+        margin-bottom: 6px;
+        padding-bottom: 0;
+    }
+
+    \r\n.image-wrapper-hires {
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid #CECECE;
+        padding: 5px;
+        background: #fff;
+        float: left;
+        width: 290px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    \r\n.pager-footer {
+        line-height: 1.3em;
+        color: #666;
+        border: 1px solid #CECECE;
+        padding: 10px;
+        background: #fff;
+        float: left;
+        width: 280px;
+        overflow: hidden;
+        margin: 0;
+        font-size: 0.8em;
+        -webkit-border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+        margin-bottom: 10px;
+    }
+
+    \r\n.key {
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid #CECECE;
+        border-top: 1px solid #CECECE;
+        border-bottom: 0;
+        text-align: center;
+        background: #fff;
+        width: 284px;
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    \r\n.key.last {
+        border-bottom: 1px solid #CECECE;
+        margin-bottom: 10px;
+        -webkit-border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+    }
+
+    \r\n.key img {
+        float: none;
+    }
+
+    \r\n.radar-key {
+        padding-bottom: 10px;
+    }
+
+    \r\n.key p {
+        width: 262px;
+        text-align: left;
+        font-size: 0.8em;
+        line-height: 13px;
+        border-top: 1px solid #cecece;
+        padding-top: 10px;
+        margin: 10px 0 0 10px;
+    }
+
+    \r\np.rain-snow {
+        padding-left: 25px;
+        width: 237px;
+    }
+
+    \r\n\r\n /* WARNINGS BOX */ \r\n.swx {
+        color: #666;
+        line-height: 1.3em;
+    }
+
+    \r\n.swx-page h2 {
+        padding: 10px;
+    }
+
+    \r\n.swx-page .item {
+        padding: 10px 6px 4px 10px;
+    }
+
+    \r\n.swx-page a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #2E7C96;
+        font-size: 1.1em;
+    }
+
+    \r\n.warnings-box {
+        color: #ffffff;
+        background-color: #eb6902;
+        margin: 22px 0 0;
+        -webkit-border-radius: 7px;
+    }
+
+    \r\n.warnings-box ul {
+        padding: 2px 10px 4px 10px
+    }
+
+    \r\n.warnings-box ul li {
+        font-size: 1em;
+        font-weight: bold;
+        border-bottom: 1px solid #ef8836;
+        padding: 7px 0;
+    }
+
+    \r\n.warnings-box ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    \r\n.warnings-box h3 {
+        color: #eb6902;
+        font-size: 1.2em;
+        padding: 10px;
+        border: 1px solid #ffbb83;
+        border-bottom: 0;
+        -webkit-border-top-left-radius: 7px;
+        -webkit-border-top-right-radius: 7px;
+    }
+
+    \r\n.warning-active {
+        float: right;
+    }
+
+    \r\n.warnings-banner {
+        text-align: center;
+        padding: 2px 0 8px 0;
+        margin: -13px 0 10px 0;
+    }
+
+    \r\n#marine .warnings-banner {
+        margin-top: -10px;
+    }
+
+    \r\n.warnings-banner a {
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 4px 2px 8px;
+    }
+
+    \r\n\r\n /* SECTION STYLES */ \r\n.section-list h2 {
+        padding: 0;
+        border-bottom: 0;
+        text-transform: none;
+    }
+
+    \r\n.section-list ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    \r\n.section-list li {
+        position: relative;
+        color: #999;
+        text-transform: uppercase;
+        border-bottom: 1px solid #CFCFCF;
+        padding: 12px 0 10px 10px;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    \r\n.section-list li.first {
+        padding: 0;
+    }
+
+    \r\n.section-list li.last {
+        padding: 0;
+        border: none;
+    }
+
+    \r\n.section-list li.first strong {
+        padding: 2px 0 8px 8px;
+    }
+
+    \r\n.section-list strong {
+        display: block;
+        font-size: 1.2em;
+        color: #EB6800;
+        text-transform: none;
+    }
+
+    \r\n.section-list li a {
+        display: block;
+        color: #2E7C96;
+        padding: 12px 0 10px 10px;
+        margin: -12px 0 -10px -10px;
+    }
+
+    \r\n.section-list li a:focus {
+        background: #006d7d;
+        color: #fff;
+    }
+
+    \r\n.status-text {
+        font-size: 0.8em;
+        padding: 0 0 3px 0;
+        margin: 0;
+    }
+
+    \r\n\r\n /* SUBNAV STYLES */ \r\nul.mob-snav {
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        padding: 8px 0 12px 0;
+        margin: -2px 0 10px 0;
+    }
+
+    \r\nul.mob-snav li {
+        display: inline;
+        padding: 0 8px 0 11px;
+        border-left: 1px solid #96a58d;
+    }
+
+    \r\nul.mob-snav li a {
+        color: #e4e4e4;
+    }
+
+    \r\nul.mob-snav li a.active {
+        color: #fff;
+    }
+
+    \r\nul.mob-snav.marine {
+        background: #009eb9;
+        border-top: 1px solid #37ADC0;
+    }
+
+    \r\nul.mob-snav.marine li {
+        border-left: 1px solid #ccecf1;
+    }
+
+    \r\nul.mob-snav.mtns {
+        background: #59705d;
+        border-top: 1px solid #6D928B;
+    }
+
+    \r\nul.mob-snav.mtns li {
+        border-left: 1px solid #dfe4e1;
+    }
+
+    \r\nul.mob-snav li.first {
+        border: none;
+    }
+
+    \r\n\r\n /* TABLES */ \r\n.table {
+        margin: 0;
+        width: 282px;
+        margin-bottom: 10px;
+    }
+
+    \r\n.table .table-heading {
+        line-height: 16px;
+    }
+
+    \r\n.table th {
+        background-color: #fff;
+        padding: 8px;
+        font-size: 1em;
+        color: #666;
+        border: 1px solid #ddd;
+    }
+
+    \r\n.table .cfg th {
+        background-color: #eee;
+    }
+
+    \r\n.table tr.even {
+        background-color: #fff;
+    }
+
+    \r\n.table tr.odd {
+        background-color: #fff;
+    }
+
+    \r\n.table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        font-size: 1em;
+    }
+
+    \r\n.table td span.temp {
+        padding: 0;
+        margin: 0
+    }
+
+    \r\n.table td.td-right, .table th.td-right {
+        text-align: right;
+    }
+
+    \r\n.table td.td-center, .table th.td-center {
+        text-align: center;
+    }
+
+    \r\n\r\n /* MESSAGES */ \r\n#message {
+        color: #336633;
+        text-align: center;
+    }
+
+    \r\n#message .status, #message .error {
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        -webkit-border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+        -webkit-border-top-left-radius: 7px;
+        -webkit-border-top-right-radius: 7px;
+    }
+
+    \r\n#message .status {
+        background: #ffffff;
+        border: 1px solid #cecece;
+    }
+
+    \r\n#message .error {
+        background: #CC3300;
+        color: #ffffff;
+    }
+
+    \r\n#message .status ul, #message .error ul {
+        margin: 0 0 -12px -10px;
+    }
+
+    \r\n#message .status li, #message .error li {
+        margin-bottom: 15px;
+    }
+
+    \r\n\r\n /* STANDARD PAGE */ \r\n.standard-page h1 {
+        padding: 8px 10px;
+    }
+
+    \r\n.standard-page p {
+        margin: 10px;
+    }</style>
+</head>
+<body>
+<div class=\"mob-content\">
+    <div class=\"town-detail title-detail\
+    "><h1>Weather Warning Criteria</h1></div>
+<div class=\"mob-page\">
+    <div class=\"item\"><h2 style=\"margin:20px 0 -8px\">Severe Thunderstorm Warning</h2><p>In New Zealand, MetService
+        classifies a thunderstorm as severe if one or more of the following criteria are met:</p>
+        <ul>
+            <li>Heavy rain from thunderstorms of 25mm/h or more.</li>
+            <li>Large hail of 20mm diameter or more.</li>
+            <li>Strong wind gusts from thunderstorms of 110km/h (60 knots) or more.</li>
+            <li>Damaging tornadoes with wind speeds more than 116km/h (63 knots) - i.e. Fujita F1 or stronger.</li>
+        </ul>
+        <p>Note: some tornadic systems such as funnel clouds, waterspouts and small land-based tornadoes are possible
+            with thunderstorms that may not be classified as severe.</p>
+        <h2 style=\"margin:20px 0 -8px\">Severe Weather Warning</h2><p>MetService will issue a Severe Weather Warning
+            whenever there is an expectation that any of the following weather conditions will occur within the next 24
+            hours:</p>
+        <ul>
+            <li>Widespread* rainfall greater than 50mm within 6 hours or 100mm within 24 hours;</li>
+            <li>Widespread* snowfall below 1000 metres on the North Island, South Canterbury or Otago - or below 500
+                metres elsewhere on the South Island with a snow depth of 10 centimetres within 6 hours or 25
+                centimetres within 24 hours;
+            </li>
+            <li>Widespread* severe gales with a minimum mean speed of 90km/h or frequent gusts exceeding 110km/h.</li>
+        </ul>
+        <p>*\"Widespread\" means over an area of 1000 square kilometres or more.</p>
+        <p>Severe Weather Warnings are classified into one of two categories – Orange Warnings or Red Warnings –
+            depending on the expected severity and impact of the event. The majority of warnings issued will be Orange
+            Warnings, with Red Warnings reserved for only the most extreme weather events.</p>
+        <h2 style=\"margin:20px 0 -8px\">Severe Weather Watch</h2><p>MetService will issue a Severe Weather Watch
+            whenever there is an expectation that conditions may deteriorate to the thresholds specified for the issue
+            of a Severe Weather Warning:</p>
+        <ul>
+            <li>After the next 24 hours but within 48-72 hours, or</li>
+            <li>If there is a high level of uncertainty within the next 24 hours.</li>
+        </ul>
+        <h2 style=\"margin:20px 0 -8px\">Road Snowfall Warning</h2><p>MetService will issue a Road Snowfall Warning for
+            Napier-Taupo Road (SH5), Desert Road (SH1), Remutaka Hill Road (SH2), Lewis Pass (SH7), Arthur's Pass
+            (SH73), Porters Pass (SH73), Haast Pass (SH6), Lindis Pass (SH8), Crown Range Road, Milford Road (SH94) or
+            Dunedin to Waitati Highway (SH1) whenever there is a likelihood of snow settling on one or more of those
+            roads within the next 24 hours.</p>
+        <p>Disclaimer: These warnings provide information regarding expected weather conditions. They contain no
+            information about current road conditions or about the amount of snow currently lying on any road.</p>
+        <h2 style=\"margin:20px 0 -8px\">Heavy Swell Warning</h2><p>MetService will publish a Heavy Swell Warning for
+            the following areas whenever there is an expectation that any of the criteria will occur within the next
+            24-48 hours.</p>
+        <p>The Kapiti-Porirua coast from Otaki to Cape Terawhiti:</p>
+        <ul>
+            <li>Combined waves of significant height 4 metres or greater from the westerly quarter (NW-SW) are expected
+                to occur.
+            </li>
+        </ul>
+        <p>The Wellington south coast from Cape Terawhiti to Turakirae Head:</p>
+        <ul>
+            <li>Swell of 4 metres or more with a period of 14 seconds or more (from the southerly quarter) coinciding
+                with high tide.
+            </li>
+            <li>Or combined waves of 6 metres or more (from the southerly quarter) coinciding with high tide.</li>
+        </ul>
+        <p>The Wairarapa coast from Turakirae Head to Maitakona:</p>
+        <ul>
+            <li>Swell of 4 metres or more with a period of 14 seconds or more, coinciding with high tide.</li>
+            <li>Or significant combined waves of 6 metres or more coinciding with high-tide.</li>
+        </ul>
+        <p>Swell warnings are issued for other selected parts of the New Zealand coast by arrangement with Regional
+            Councils and do not currently appear on the MetService website.</p></div>
+</div>
+</div></body>
+</html>
